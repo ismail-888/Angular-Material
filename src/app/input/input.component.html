@@ -1,0 +1,20 @@
+<h2>Angular Material -Input</h2>
+<mat-form-field class="example-full-width">
+    <input matInput placeholder="Enter Text"/>
+</mat-form-field>
+
+<form class="example-form">
+    <mat-form-field class="example-full-width">
+      <mat-label>Favorite food</mat-label>
+      <input matInput placeholder="Ex. Pizza" value="Sushi">
+    </mat-form-field>
+  
+    <mat-form-field class="example-full-width">
+      <mat-label>Label Here</mat-label>
+      <mat-select>
+        <mat-option *ngFor="let food of foods" [value]="food.value">
+          {{food.viewValue}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </form>

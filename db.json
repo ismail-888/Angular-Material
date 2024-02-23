@@ -1,0 +1,162 @@
+{
+  "customer": [
+    {
+      "id": 1,
+      "name": "test uesr",
+      "phone": "898998",
+      "email": "test@gmail.com",
+      "status": "Active"
+    },
+    {
+      "id": 2,
+      "name": "ismail",
+      "phone": "63453",
+      "email": "ismail@gmail.com",
+      "status": "Active"
+    },
+    {
+      "id": 3,
+      "name": "ahmad",
+      "phone": "436732",
+      "email": "ahmad@gmail.com",
+      "status": "InActive"
+    },
+    {
+      "id": 4,
+      "name": "jihad",
+      "phone": "2136234",
+      "email": "jihad@gmail.com",
+      "status": "InActive"
+    },
+    {
+      "id": 5,
+      "name": "mohamad",
+      "phone": "5675345",
+      "email": "mohamad@gmail.com",
+      "status": "Active"
+    },
+    {
+      "id": 6,
+      "name": "sara",
+      "phone": "894732",
+      "email": "sara@gmail.com",
+      "status": "Active"
+    },
+    {
+      "id": 7,
+      "name": "jihad",
+      "phone": "2136234",
+      "email": "jihad@gmail.com",
+      "status": "InActive"
+    },
+    {
+      "id": 8,
+      "name": "mohamad",
+      "phone": "5675345",
+      "email": "mohamad@gmail.com",
+      "status": "Active"
+    },
+    {
+      "id": 9,
+      "name": "sara",
+      "phone": "894732",
+      "email": "sara@gmail.com",
+      "status": "Active"
+    },
+    {
+      "id": 10,
+      "name": "jihad",
+      "phone": "2136234",
+      "email": "jihad@gmail.com",
+      "status": "InActive"
+    },
+    {
+      "id": 11,
+      "name": "mohamad",
+      "phone": "5675345",
+      "email": "mohamad@gmail.com",
+      "status": "Active"
+    },
+    {
+      "name": "jojo",
+      "email": "jojo@gmai.com",
+      "phone": "12323",
+      "status": true,
+      "id": 12
+    },
+    {
+      "name": "test uesr",
+      "email": "test@gmail.com",
+      "phone": "898998",
+      "status": "Active",
+      "id": 13
+    },
+    {
+      "name": "mohamad",
+      "email": "mohamad@gmail.com",
+      "phone": "5675345",
+      "status": "Active",
+      "id": 14
+    },
+    {
+      "name": "jihad",
+      "email": "jihad@gmail.com",
+      "phone": "2136234",
+      "status": "InActive",
+      "id": 15
+    }
+  ],
+  "associate": [
+    {
+      "id": 1,
+      "name": "ismail",
+      "address": [
+        {
+          "title": "sese",
+          "country": "Lebanon",
+          "fulladdress": "Ridani Street"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "kaka",
+      "address": [
+        {
+          "title": "tripolie",
+          "country": "Lebanon",
+          "fulladdress": "street 23"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "momo",
+      "address": [
+        {
+          "title": "toranto",
+          "country": "Syria",
+          "fulladdress": "baba room"
+        }
+      ]
+    }
+  ],
+  "country": [
+    {
+      "code": "India",
+      "name": "India"
+    },
+    {
+      "code": "Lebanon",
+      "name": "Lebanon"
+    },
+    {
+      "code": "SouthAfrica",
+      "name": "SouthAfrica"
+    },
+    {
+      "code": "Syria",
+      "name": "Syria"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+<mat-toolbar color="primary" class="mat-elevation-z8">
+    <!-- color: 1-primary 2-accent 3-warn -->
+  <button (click)="drawer.toggle()" mat-icon-button >
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>Material Ui Tutorial</span>
+  <span class="example-spacer"></span>
+  <button mat-button routerLink="">Home</button>
+  <button [matMenuTriggerFor]="lvl1master" mat-button>Master</button>
+  <mat-menu #lvl1master="matMenu">
+    <button [matMenuTriggerFor]="company" mat-menu-item>Company</button>
+    <button [matMenuTriggerFor]="customer" mat-menu-item>Customer</button>
+    <button [matMenuTriggerFor]="product" mat-menu-item>Product</button>
+  </mat-menu>
+
+  <mat-menu #company="matMenu">
+    <button mat-menu-item>Term</button>
+    <button mat-menu-item>Tax</button>
+    <button mat-menu-item>Currency</button>
+  </mat-menu>
+
+  <mat-menu #customer="matMenu">
+    <button mat-menu-item>Type</button>
+    <button mat-menu-item>Tax</button>
+  </mat-menu>
+
+  <mat-menu #product="matMenu">
+    <button mat-menu-item>Category</button>
+    <button [matMenuTriggerFor]="variant" mat-menu-item>Variant</button>
+    <button mat-menu-item>UDM</button>
+  </mat-menu>
+
+  <mat-menu #variant="matMenu">
+    <button mat-menu-item>Color</button>
+    <button mat-menu-item>Size</button>
+  </mat-menu>
+
+  <button mat-button routerLink="input">Input</button>
+  <button mat-button routerLink="autocomplete">AutoComplet</button>
+  <button mat-raised-button color="accent">Sign Up</button>
+
+  <button mat-icon-button (click)="badgevisibility()">
+    <mat-icon
+      matBadge="15"
+      [matBadgeHidden]="badgevisible"
+      matBadgeColor="accent"
+      matBadgeSize="small"
+      >notifications</mat-icon
+    >
+  </button>
+</mat-toolbar>
+
+<mat-drawer-container autosize>
+  <mat-drawer #drawer opened="true" mode="side" position="start"> 
+    <!--  mode : 1-side 2-over 3-push -->
+    <!--  position : 1-start(left) 2-end(right)  -->
+    <mat-nav-list>
+      <mat-list-item>
+        <button routerLink="card" mat-button><mat-icon>dashboard</mat-icon> Dashboard</button>
+      </mat-list-item>
+      <mat-list-item>
+        <button mat-button><mat-icon>home</mat-icon> Home</button>
+      </mat-list-item>
+      <mat-list-item>
+        <button mat-button><mat-icon>settings</mat-icon> Settings</button>
+      </mat-list-item>
+      <mat-list-item>
+        <button mat-button><mat-icon>help</mat-icon> Help</button>
+      </mat-list-item>
+      <mat-list-item>
+        <button mat-button><mat-icon>analytics</mat-icon> Analytics</button>
+      </mat-list-item>
+    </mat-nav-list>
+  </mat-drawer>
+  <mat-drawer-content>
+    <div style="text-align: center;min-height: 600px;">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-drawer-content>
+</mat-drawer-container>
